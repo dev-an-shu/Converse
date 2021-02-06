@@ -4,14 +4,14 @@ import 'firebase/auth';
 import 'firebase/analytics';
 
 firebase.initializeApp({
-    apiKey: "AIzaSyBW20ziGd0z18rAw2pa7g_TEtxYsltzH5s",
-    authDomain: "converse-3f061.firebaseapp.com",
-    databaseURL: "https://converse-3f061-default-rtdb.firebaseio.com",
-    projectId: "converse-3f061",
-    storageBucket: "converse-3f061.appspot.com",
-    messagingSenderId: "567426932734",
-    appId: "1:567426932734:web:d53ef73b82014f3d9eaaaf",
-    measurementId: "G-RQKXZ4TZ7M"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_SENDER_ID,
+    appId: process.env.REACT_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
   });
 
   const auth = firebase.auth();
